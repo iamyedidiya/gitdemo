@@ -5,11 +5,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <style>
+        #item {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 200px;
+            height:200px;
+            background: orange;
+            /* margin: 200px auto; */
+        }
+        div ul li {
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            text-align: center;
+            background: orange;
+            border: 1px solid #ccc;
+        }
+    </style>
 </head>
 <body>
+    <div id = 'item'></div>
     <p> Lorem ipsum dolor sit amet consectetur, adipis
         icing elit. At illo veniam magnam quae! Dolor nob
         is fugiat sequi magni cumque, neque ducimus venia
         m nisi officia cupiditate. Vero quod illo incidunt libero.</p>
+    <div>
+        <ul>
+            <li>yedidiya</li>
+            <li>yedidiya</li>
+            <li>yedidiya</li>
+            <li>yedidiya</li>
+            <li>yedidiya</li>
+            <li>yedidiya</li>
+            <li>yedidiya</li>
+            <li>yedidiya</li>
+            <li>yedidiya</li>
+            <li>yedidiya</li>
+        </ul>
+    </div>
+
+    <script>
+    
+        item.onclick = (function () {
+            timer = setInterval(function () {
+                item.style.left = item.offsetLeft + 20 + 'px';
+                console.log(123)
+            }, 1000)
+        })
+        
+    
+    </script>
 </body>
 </html>
